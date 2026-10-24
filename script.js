@@ -82,7 +82,7 @@
   });
 
   // Contact form: sends to Formspree (see README.txt to set your form ID)
-  var FORM_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
+  var FORM_ENDPOINT = 'https://formspree.io/f/xyeezqqr';
   var form = document.getElementById('contact-form');
   var note = document.getElementById('thanks');
 
