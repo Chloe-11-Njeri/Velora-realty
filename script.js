@@ -9,7 +9,7 @@
   ];
   var agents = [
     { initials: 'MN', photo: 'images/agent-1.jpg', name: 'Mary Njeri', role: 'Senior Property Advisor', languages: 'English', phone: '+254745135785'},
-    { initials: 'BT', photo: 'images/agent-2.jpg', name: ' Carl Berl', role: 'Sales Advisor', languages: 'English', phone:''},
+    { initials: 'BT', photo: 'images/agent-2.jpg', name: ' Carl Berl', role: 'Sales Advisor', languages: 'English', phone:'+254181309898'},
     
   ];
 
@@ -39,10 +39,10 @@
           '</button>' +
         '</div>' +
         '<div class="card-body">' +
-          '<div class="price">' + (l.mode === 'buy' ? '[AED price]' : '[AED per year]') + '</div>' +
+          '<div class="price">' + (l.mode === 'buy' ? 'AED price' : 'AED per year') + '</div>' +
           '<div class="card-title">' + l.title + '</div>' +
           '<div class="muted">' + l.area + ', Dubai</div>' +
-          '<div class="card-meta"><span>[#] beds</span><span>[#] baths</span><span>[#] sq ft</span></div>' +
+          '<div class="card-meta"><span> beds</span><span> baths</span><span> sq ft</span></div>' +
         '</div>';
       card.querySelector('.save').addEventListener('click', function () {
         saved[l.id] = !saved[l.id];
