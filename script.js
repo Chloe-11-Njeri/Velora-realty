@@ -1,4 +1,4 @@
-  // ----- Data (edit these to change your listings and team) -----
+
   var listings = [
     { id: 'a', image: 'images/property-1.jpg', mode: 'buy',  title: 'Luxury apartment',       area: 'Downtown Dubai',     tone: '#DDE5DA' },
     { id: 'b', image: 'images/property-2.jpg', mode: 'buy',  title: 'Waterfront villa',       area: 'Palm Jumeirah',      tone: '#EFE7D1' },
@@ -13,7 +13,6 @@
     
   ];
 
-  // ----- State -----
   var mode = 'buy';
   var saved = {};
 
@@ -67,7 +66,6 @@
     a.addEventListener('click', function () { setMode(a.dataset.mode); });
   });
 
-  // Agents
   var agentGrid = document.getElementById('agent-grid');
   agents.forEach(function (a) {
     var el = document.createElement('div');
@@ -81,7 +79,6 @@
     agentGrid.appendChild(el);
   });
 
-  // Contact form: sends to Formspree (see README.txt to set your form ID)
   var FORM_ENDPOINT = 'https://formspree.io/f/xyeezqqr';
   var form = document.getElementById('contact-form');
   var note = document.getElementById('thanks');
